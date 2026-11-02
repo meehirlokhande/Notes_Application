@@ -9,6 +9,7 @@ const DbConnection = async () =>{
         console.log("Database connection successfull.");
     }catch(error){
         console.log("MongoDb connection error",error);
+        throw error;
     }
 };
 
